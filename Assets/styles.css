@@ -1,0 +1,51 @@
+body: {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #ffffff;
+}
+
+.upper {
+    width: 60%;
+    margin: auto;
+}
+
+.logo {
+    margin: 0;
+    margin-top: 34px;
+}
+
+.logo img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.logo p {
+    display: inline-block;
+    text-transform: uppercase;
+    /* color: #161920;*/
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.contact {
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contact li {
+  display: inline-block;  
+}
+
+
+
