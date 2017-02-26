@@ -1,51 +1,504 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0; */
+
+
+}
 body: {
     font-family: "Open Sans", Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
-
 header {
     background-color: #ffffff;
 }
-
 .upper {
     width: 60%;
     margin: auto;
+    position: relative;
+    margin-top: 42px;
+    height: 90px;
+    ;
 }
-
-.logo {
+div .logo {
+    display: inline-block;
     margin: 0;
-    margin-top: 34px;
+    position: absolute;
+    left: 0;
 }
-
 .logo img {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
 }
-
 .logo p {
     display: inline-block;
     text-transform: uppercase;
-    /* color: #161920;*/
     font-family: "Open Sans";
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
     vertical-align: middle;
+    position: none;
+    /* не работает, p выпадает */
 }
-
 .contact {
     display: inline-block;
     padding: 0;
-    text-decoration: none;
     list-style: none;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    font-weight: 400;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #e1e9f2;
+    padding: 10px;
+}
+.contact .v_line {
+    width: 1px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #e1e9f2;
+    margin: auto 5px;
 }
 
+.contact a {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #9ba4b0;
+    text-decoration: none;
+}
+.contact span {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #484e57;
+    font-weight: 400;
+    text-decoration: none;
+}
 .contact li {
-  display: inline-block;  
+    display: inline-block;
 }
 
+/*------navigation------*/
+.navigation {
+    width: 60%;
+    margin: auto;
+    background-color: #ff8261;
+}
+.navigation ul {
+    font-size: 0;
+    text-align: center;
+    height: 56px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 0;
+}
+.navigation li {
+    display: inline-block;
+}
+.navigation a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+}
 
+/*------awesome hosting section------*/
+.hosting {
+    background-color: #222836;
+    padding-top: 378px;
+    padding-bottom: 139px;
+    position: relative;
+}
+.hosting h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hosting span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+}
+.hosting span:last-child {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    /* не факт */
+}
+.dots {
+    position: absolute;
+    width: 50px;
+    left: 47%;
+    bottom: 10%;
+}
 
+/*---------------search-----------------*/
+.section3 {
+    background-color: #e7f4f8;
+    text-align: center;
+}
+.center {
+    margin: auto;
+    padding-top: 41px;
+    padding-bottom: 77px;
+    display: inline-block;
+}
+.search {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 29px;
+}
+#first_form {
+    display: inline-block;
+    vertical-align: middle;
+}
+.search i {
+    color: #fb6b45;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.search span {
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+}
+.search span:last-child {
+    color: #556b72;
+    font-size: 30px;
+    font-weight: 700;
+}
+#first_form input[type="text"] {
+    color: #a0a9b6;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    width: 430px;
+    height: 55px;
+    border: 1px solid #dfeef3;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+#first_form .years {
+    box-sizing: border-box;
+    width: 165px;
+    height: 55px;
+    border: 1px solid #dfeef3;
+    background-color: #ffffff;
+    margin-right: 10px;
+    color: #a0a9b6;
+    font-size: 14px;
+    font-weight: 400;
+}
+#first_form .domain {
+    width: 165px;
+    height: 55px;
+    border: 1px solid #dfeef3;
+    background-color: #ffffff;
+    margin-right: 9px;
+    color: #a0a9b6;
+    font-size: 14px;
+    font-weight: 400;
+}
+#first_form input[type="submit"] {
+    width: 196px;
+    height: 55px;
+    background-color: #ff8261;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*-------section Benefits---------*/
+.benefits {
+    margin-bottom: 114px;
+}
+.benefits .line {
+    width: 21px;
+    height: 2px;
+    background-color: #fb6b45;
+    margin-bottom: 12px;
+}
+.benefits div+span {
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+}
+.benefits h2 span:last-child {
+    text-transform: uppercase;
+    color: #556b72;
+    font-size: 30px;
+    font-weight: 700;
+}
+.benefits .container {
+    margin: 71px 60px 15px;
+}
+.benefits ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.benefits ul li img {
+    padding-top: 10px;
+    width: 69px;
+    height: 56px;
+    color: #fb6b45;
+}
+.benefits ul li:nth-child(3) {
+    margin-right: 0;
+}
+.benefits ul li:nth-child(6) {
+    margin-right: 0;
+}
+.benefits ul li {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2.5%;
+}
+.benefits .container li:first-child img {
+    float: left;
+}
+.benefits .container li:first-child div {
+    width: 70%;
+    float: right;
+}
+.benefits .container li i {
+    padding-top: 12px;
+    display: block;
+    width: 20%;
+    float: left;
+    color: #fb6b45;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.benefits .container li div {
+    width: 70%;
+    float: right;
+}
+.benefits .container li div h3 {
+    color: #556b72;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+}
+.benefits .container li div p {
+    color: #a0a9b6;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*-------What is hot-------*/
+
+/*-------Left container-------*/
+.hot {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    background-color: #fffbde;
+}
+.hot .line {
+    width: 21px;
+    height: 2px;
+    background-color: #fb6b45;
+    margin-bottom: 12px;
+}
+.hot div+span {
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+}
+.hot h2 span:last-child {
+    text-transform: uppercase;
+    color: #556b72;
+    font-size: 30px;
+    font-weight: 700;
+}
+.left_article {
+    width: 41.7%;
+    background-color: #fffbde;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+.right_article {
+    width: 58.3%;
+    background-color: #fffbde;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+.left_container {
+    display: inline-block;
+    text-align: left;
+    margin-right: 7.2%;
+    margin-top: 90px;
+    margin-bottom: 130px;
+}
+.hot h2 {
+    margin-bottom: 61px;
+}
+
+/*-------Right container-------*/
+.right_container {
+    display: inline-block;
+    text-align: left;
+    margin-left: 6.9%;
+    margin-top: 90px;
+    margin-bottom: 118px;
+}
+.right_container ul {
+    list-style: none;
+    display: inline-block;
+    font-weight: 400;
+    color: #4c515b;
+    font-size: 14px;
+}
+.right_container ul:first-child {
+    padding-left: 0;
+}
+.right_container li:first-letter {
+    font-weight: 700;
+}
+.right_container button {
+    display: inline-block;
+    width: 72px;
+    height: 10px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 165px;
+    height: 55px;
+    background-color: #ff8261;
+    border: none;
+    margin-left: 5px;
+}
+
+/*-------our hosting----------*/
+.our_hosting {
+    background-color: #ffffff;
+}
+.our_hosting h3 {
+    text-align: center;
+}
+.our_hosting>div {
+    width: 90%;
+    margin: 87px auto;
+    /*------ошибки----*/
+}
+.our_hosting .line {
+    width: 21px;
+    height: 2px;
+    background-color: #fb6b45;
+    margin-bottom: 12px;
+}
+.our_hosting div+span {
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+}
+.our_hosting h2 span:last-child {
+    text-transform: uppercase;
+    color: #556b72;
+    font-size: 30px;
+    font-weight: 700;
+}
+.our_hosting ul {
+    padding: 0;
+}
+.our_hosting ul li {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #e1eff4;
+    width: 20%;
+    margin-right: 4%;
+}
+.our_hosting ul li:last-child {
+    margin-right: 0;
+}
+.our_hosting ul li p {
+    color: #8d9198;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.our_hosting ul li hr {
+    background-color: #e9eef2;
+}
+.our_hosting ul li h3 span:first-child {
+    color: #556b72;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 300;
+}
+.our_hosting ul li h3 span:nth-child(2) {
+    color: #556b72;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+.our_hosting ul li h3 span:nth-child(3) {
+    color: #556b72;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.our_hosting .blue {
+    margin: auto;
+    width: 183px;
+    height: 39px;
+    background-color: #52cbf8;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    padding-top: 6px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.our_hosting .separated {
+    width: 90%;
+}
+.our_hosting .orange {
+    width: 115px;
+    height: 43px;
+    background-color: #ff8261;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 12px;
+}
