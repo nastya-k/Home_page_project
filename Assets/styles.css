@@ -16,9 +16,9 @@ body: {
 }
 header {
     background-color: #ffffff;
+    margin: 34px 60px 0;
 }
 .upper {
-    width: 60%;
     margin: auto;
     position: relative;
     margin-top: 42px;
@@ -90,7 +90,6 @@ div .logo {
 
 /*------navigation------*/
 .navigation {
-    width: 60%;
     margin: auto;
     background-color: #ff8261;
 }
@@ -113,6 +112,9 @@ div .logo {
     text-decoration: none;
     padding-top: 21.5px;
     padding-bottom: 21.5px;
+    box-sizing: border-box;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
 /*------awesome hosting section------*/
