@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    <!-------------- Header ---------->
+    <header>
+        <div class="upper">
+            <div class="logo">
+    
+                <img src="Assets/logo.png" alt="logo">
+                <p class="logo text">hosting</p>
+                </div>
+            
+
+            <ul class="contact">
+                <li><a href="mailto:info@webhosting.com" target="_top"><span>Support</span> : info@webhosting.com</a></li>
+                <div class="v_line"></div>
+                <li><a href="#">Register</a></li>
+                <div class="v_line"></div>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">about us</a>
+                </li>
+                <li>
+                    <a href="#">service</a>
+                </li>
+                <li>
+                    <a href="#">hosting plans</a>
+                </li>
+                <li>
+                    <a href="#">domain</a>
+                </li>
+                <li>
+                    <a href="#">faq</a>
+                </li>
+                <li>
+                    <a href="#">testimonials</a>
+                </li>
+                <li>
+                    <a href="#">blog</a>
+                </li>
+                <li>
+                    <a href="#">support</a>
+                </li>
+                <li>
+                    <a href="#">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---------------- Contact us---------------->
+
+    <section class="contact_us">
+        <h2>
+          <span>contact</span><br> 
+          <span>us</span>
+            </h2>
+    </section>
+    <!---------------- Contact form---------------->
+
+    <section class="contact_form">
+        <div>
+            <h2><div class="line"></div><span>Contact</span><br><span>form</span></h2>
+
+            <form class="form1" action="#" name="form" method="POST">
+                <input type="text" name="firstname" placeholder="Name"><br>
+
+                <input type="text" name="age" placeholder="Age"><br>
+
+                <input type="email" name="email" placeholder="Email"><br>
+
+                <input type="text" name="social network account" placeholder="Your Facebook or Vkontakte account"><br>
+
+                <fieldset id="sex">
+                
+                    <legend>Sex:</legend>
+                    <label><input type="radio" name="gender" value="male"> <span>Male</span></label><br>
+                    <label><input type="radio" name="gender" value="female"> <span>Female</span></label>
+                    
+                    </fieldset>
+
+                <input type="tel" name="telephone" placeholder="Phone number">
+
+                <fieldset id="you_are">
+                    <legend>You are:</legend>
+                    <label><input type="radio" name="gender" value="male"> <span>Student</span></label><br>
+                    <label><input type="radio" name="gender" value="female"> <span>Scientist</span></label>
+                </fieldset>
+
+                <input type="text" name="occupation" placeholder="Workplace/Education"><br>
+
+                <input type="text" name="position_course" placeholder="Position/Course"><br>
+
+                <input type="text" name="country" placeholder="Country"><br>
+
+                <input type="text" name="city" placeholder="City"><br>
+
+                <input type="text" name="address" placeholder="Your address with index"><br>
+
+                <fieldset>
+                    <legend>Participation form:</legend>
+                    <label><input type="radio" name="participation" value="In Absentia"> <span>In Absentia (thesis publication only)</span></label><br>
+                    <label><input type="radio" name="participation" value="Regular"> <span>Regular (report publication)</span></label>
+                </fieldset>
+
+                <fieldset id="thesis_form">
+                    <legend>Thesis form:</legend>
+                    <label><input type="radio" name="Thesis" value="Printed"> <span>Printed</span></label> <br>
+                    <label><input type="radio" name="Thesis" value="PDF" checked> <span>PDF</span></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Сonfirmation of the registration fee:</legend>
+                    <input type="file" name="confirmation">
+                </fieldset>
+                
+                
+                
+
+                <fieldset>
+                    <legend>Thesis:</legend>
+                    <input type="file" name="thesis">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Report form:</legend>
+                    <select>
+                        <option value="verbal" selected>Verbal</option>
+                        <option value="written">Written</option>
+                    </select>
+                </fieldset>
+
+                <textarea rows="7" cols="75" name="comment">Report title</textarea><br>
+ 
+             <input type="text" name="Co-reporters" placeholder="Co-reporters names">
+             
+             <input type="email" name="Co-reporters emails" placeholder="Co-reporters emails separated by commas">
+             
+             <fieldset>
+                    <legend>Accomodation booking:</legend>
+                    <label><input type="radio" name="accomodation" value="yes"> <span>Yes</span></label><br>
+                   <label> <input type="radio" name="accomodation" value="no"> <span>No</span></label>
+                </fieldset>
+           
+           <p id="last_p">Thank you, your registration is completed. In order to publish a new thesis, please complete a separate registration form.</p>
+           
+           
+                <div class="submit_container"><input id="submit_form" type="submit" value="Send"></div>
+            </form>
+        </div>
+        
+        <!--------------Map here---------------->
+        
+    </section>
+    <section class="Map_here">
+       <div><img src="Assets/Map%20here.png" alt="Map here"><p>Map here</p></div>
+    </section>
+    
+  <!-----------Footer------------->
+       
+        <footer>
+        <div class="logo">
+            <img src="Assets/logo.png" alt="logo">
+            <p class="logo text">hosting
+                <br><span>2015 © Allright Reserved</span></p>
+        </div>
+        <div>
+            <h3>Quick links</h3>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Service</li>
+                <li>Hosting plnas</li>
+                <li>Domains</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Faq</li>
+                <li>Blog</li>
+                <li>Support</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact us</h3>
+            <ul>
+                <li>Address : 9867 lipsum text here. There are many variations</li>
+                <li>Email : info@hosting.com</li>
+                <li>Call : +87 7765 557 888</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Social media</h3>
+            <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </footer>
+    
+   
+</body>
+
+
+
+
+</html>

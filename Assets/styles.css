@@ -11,7 +11,7 @@
 
 }
 body: {
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
 }
 header {
@@ -21,20 +21,20 @@ header {
 .upper {
     margin: auto;
     position: relative;
-    margin-top: 42px;
+    margin-top: 30px;
     height: 90px;
     ;
 }
 div .logo {
     display: inline-block;
     margin: 0;
-    position: absolute;
-    left: 0;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 .logo img {
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
+    margin-right: 5px;
 }
 .logo p {
     display: inline-block;
@@ -61,6 +61,8 @@ div .logo {
     border-width: 1px;
     border-color: #e1e9f2;
     padding: 10px;
+    width: 40%;
+    text-align: right;
 }
 .contact .v_line {
     width: 1px;
@@ -68,9 +70,7 @@ div .logo {
     display: inline-block;
     vertical-align: middle;
     background-color: #e1e9f2;
-    margin: auto 5px;
 }
-
 .contact a {
     font-family: "Open Sans";
     font-size: 14px;
@@ -86,6 +86,7 @@ div .logo {
 }
 .contact li {
     display: inline-block;
+    padding: 0 15px;
 }
 
 /*------navigation------*/
@@ -97,24 +98,85 @@ div .logo {
     font-size: 0;
     text-align: center;
     height: 56px;
+    line-height: 56px;
     box-sizing: border-box;
-    padding-top: 20px;
     padding-left: 0;
 }
 .navigation li {
     display: inline-block;
+    height: 56px;
+    line-height: 56px;
 }
+
+/*-------нижняя панель------*/
+
+.navigation li:nth-child(1) {
+    display: inline-block;
+    width:8%;
+}
+
+.navigation li:nth-child(2) {
+    display: inline-block;
+    width:10%;
+}
+
+.navigation li:nth-child(3) {
+    display: inline-block;
+    width:10%;
+}
+
+.navigation li:nth-child(4) {
+    display: inline-block;
+    width:12%;
+}
+
+.navigation li:nth-child(5) {
+    display: inline-block;
+    width:10%;
+}
+
+.navigation li:nth-child(6) {
+    display: inline-block;
+    width:8%;
+}
+
+.navigation li:nth-child(7) {
+    display: inline-block;
+    width:12%;
+}
+
+.navigation li:nth-child(8) {
+    display: inline-block;
+    width:8%;
+}
+
+.navigation li:nth-child(9) {
+    display: inline-block;
+    width:10%;
+}
+
+.navigation li:nth-child(10) {
+    display: inline-block;
+    width:12%;
+}
+
+.navigation li a:active {
+background-color: #52cbf8;
+}
+
+/*-------нижняя панель------*/
+
 .navigation a {
+    display: block;
     color: #ffffff;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    padding-top: 21.5px;
-    padding-bottom: 21.5px;
-    box-sizing: border-box;
-    padding-left: 23px;
-    padding-right: 23px;
+    height: 56px;
+    line-height: 56px;
+    letter-spacing: 0.1em;
+    
 }
 
 /*------awesome hosting section------*/
@@ -503,4 +565,147 @@ div .logo {
     box-sizing: border-box;
     text-align: center;
     padding-top: 12px;
+}
+
+/*-------------Contact us----------------*/
+.contact_us {
+    background-color: #222836;
+    box-sizing: border-box;
+    height: 270px;
+    padding-top: 104px;
+}
+.contact_us h2 {
+    margin: auto 60px;
+    font-family: "Open sans", sans-serif;
+}
+.contact_us h2 span:first-child {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+.contact_us h2 span:last-child {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+/*-------------Contact form----------------*/
+.contact_form {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.contact_form h3 {
+    text-align: center;
+}
+.contact_form>div {
+    width: 586.8px;
+    
+}
+.contact_form .line {
+    width: 21px;
+    height: 2px;
+    background-color: #fb6b45;
+    margin-bottom: 12px;
+}
+.contact_form div+span {
+    text-transform: uppercase;
+    color: #859aa1;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contact_form h2 span:last-child {
+    text-transform: uppercase;
+    color: #556b72;
+    font-size: 30px;
+    font-weight: 700;
+}
+.contact_form {
+    margin-top: 64px;
+}
+.contact_form h2 {
+    margin-bottom: 30px;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form 
+input[type="tel"]{
+    width: 559px;
+    height: 46px;
+    border: 1px solid #dfecf0;
+    background-color: #ffffff;
+    padding-left: 25px;
+    color: #a0a9b6;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.contact_form textarea {
+    border: 1px solid #dfecf0;
+    background-color: #ffffff;
+    padding-left: 25px;
+    color: #a0a9b6;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 9px;
+    padding-top: 10px;
+}
+
+.contact_form fieldset {
+width: 30%;
+    border: 1px solid #dfecf0;
+    background-color: #ffffff;
+    padding-left: 25px;
+    color: #a0a9b6;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-margin-start: 0;
+    margin-bottom: 13px;
+}
+
+.contact_form fieldset legend,
+.contact_form fieldset span {
+    color: #a0a9b6;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#last_p {
+color: #a0a9b6;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.submit_container {
+    text-align: right;
+}
+
+#submit_form {
+width: 118px;
+height: 44px;
+background-color: #fb6b45;
+    color: #ffffff;
+font-size: 13px;
+font-weight: 700;
+text-transform: uppercase;
+    border: none;
+}
+
+
+/*--------------Map here----------------*/
+
+.Map_here {
+height: 394px;
+    background-color: #cadee8;
+    margin-top: 83px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 163px;
+}
+
+.Map_here div {
+    display: inline-block;
 }
