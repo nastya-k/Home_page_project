@@ -79,11 +79,11 @@
             <h2><div class="line"></div><span>Contact</span><br><span>form</span></h2>
 
             <form class="form1" action="#" name="form" method="POST">
-                <input type="text" name="firstname" placeholder="Name"><br>
+                <input type="text" name="firstname" placeholder="Name*" required><br>
 
                 <input type="text" name="age" placeholder="Age"><br>
 
-                <input type="email" name="email" placeholder="Email"><br>
+                <input type="email" name="email" placeholder="Email*" required><br>
 
                 <input type="text" name="social network account" placeholder="Your Facebook or Vkontakte account"><br>
 
@@ -129,13 +129,11 @@
                     <legend>Сonfirmation of the registration fee:</legend>
                     <input type="file" name="confirmation">
                 </fieldset>
-                
-                
-                
+                  
 
                 <fieldset>
-                    <legend>Thesis:</legend>
-                    <input type="file" name="thesis">
+                    <legend>Thesis:*</legend>
+                    <input type="file" name="thesis" required>
                 </fieldset>
 
                 <fieldset>
@@ -175,49 +173,56 @@
   <!-----------Footer------------->
        
         <footer>
-        <div class="logo">
+        <section>
+        <div class="footer_left">
+           <div class="logo">
             <img src="Assets/logo.png" alt="logo">
             <p class="logo text">hosting
                 <br><span>2015 © Allright Reserved</span></p>
+           </div>
         </div>
-        <div>
+        <div class="footer_right">
+           <div>
             <h3>Quick links</h3>
             <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Service</li>
-                <li>Hosting plnas</li>
-                <li>Domains</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Hosting plans</a></li>
+                <li><a href="#">Domains</a></li>
             </ul>
         </div>
         <div>
+           <h3>Contacts</h3>
             <ul>
-                <li>Faq</li>
-                <li>Blog</li>
-                <li>Support</li>
-                <li>Contacts</li>
+                <li><a href="">Faq</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
         </div>
         <div>
             <h3>Contact us</h3>
             <ul>
-                <li>Address : 9867 lipsum text here. There are many variations</li>
-                <li>Email : info@hosting.com</li>
-                <li>Call : +87 7765 557 888</li>
+                <li><span>Address :</span> 9867 lipsum text here.<br> There are many variations</li>
+                <li><span>Email :</span> info@hosting.com</li>
+                <li><span>Call :</span> +87 7765 557 888</li>
             </ul>
         </div>
         <div>
             <h3>Social media</h3>
             <ul>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
             </ul>
         </div>
+            </div>
+            </section>
     </footer>
     
-   
+   <script src="https://use.fontawesome.com/7b9077f115.js"></script>
 </body>
 
 
