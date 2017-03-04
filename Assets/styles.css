@@ -1,19 +1,69 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0; */
 
+@font-face{
+
+font-family: font-family: 'Open Sans', sans-serif;
+
+src: url('Assets/open-sans-fontfacekit/web fonts/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff');
+
+font-weight: 300;
+
+font-style: normal;
 
 }
-body: {
-    font-family: "Open Sans", sans-serif;
+
+@font-face{
+
+font-family: font-family: 'Open Sans', sans-serif;
+
+src: url('Assets/open-sans-fontfacekit/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff');
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: font-family: 'Open Sans', sans-serif;
+
+src: url('Assets/open-sans-fontfacekit/web fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff');
+
+font-weight: 600;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: font-family: 'Open Sans', sans-serif;
+
+src: url('Assets/open-sans-fontfacekit/web fonts/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff');
+
+font-weight: 700;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: font-family: 'Open Sans', sans-serif;
+
+src: url('Assets/open-sans-fontfacekit/web fonts/opensans_extrabolditalic_macroman/OpenSans-ExtraBoldItalic-webfont.woff') format('woff');
+
+font-weight: 800;
+
+font-style: italic;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+
 header {
     background-color: #ffffff;
     margin: 34px 60px 0;
@@ -250,7 +300,7 @@ display: inline-block;
     display: inline-block;
     vertical-align: middle;
     text-align: left;
-    margin-right: 29px;
+    margin-right: 20px;
 }
 #first_form {
     vertical-align: middle;
@@ -413,10 +463,14 @@ display: inline-block;
 
 /*-------Left container-------*/
 .hot {
-    padding: 0;
+        padding: 0;
     margin: 0;
     font-size: 0;
     background-color: #fffbde;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 81px;
+    padding-bottom: 118px;
 }
 .hot .line {
     width: 21px;
@@ -437,14 +491,14 @@ display: inline-block;
     font-weight: 700;
 }
 .left_article {
-    width: 41.7%;
+        width: 35%;
     background-color: #fffbde;
     display: inline-block;
     text-align: right;
     vertical-align: top;
 }
 .right_article {
-    width: 58.3%;
+    width: 65%;
     background-color: #fffbde;
     display: inline-block;
     text-align: left;
@@ -453,38 +507,83 @@ display: inline-block;
 .left_container {
     display: inline-block;
     text-align: left;
-    margin-right: 7.2%;
-    margin-top: 90px;
-    margin-bottom: 130px;
 }
+
 .hot h2 {
     margin-bottom: 61px;
 }
 
+.left_container img {
+width: 337px;
+}
+
 /*-------Right container-------*/
 .right_container {
-    display: inline-block;
-    text-align: left;
-    margin-left: 6.9%;
-    margin-top: 90px;
-    margin-bottom: 118px;
+        text-align: left;
+    margin-left: 7%;
 }
+
+.right_container div {
+vertical-align: top;
+}
+
 .right_container ul {
     list-style: none;
     display: inline-block;
     font-weight: 400;
-    color: #4c515b;
+   color: #696556;
     font-size: 14px;
+    vertical-align: top;
+    font-weight: 400;
+   
+    
 }
 .right_container ul:first-child {
     padding-left: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
 }
-.right_container li:first-letter {
+
+.right_container ul:nth-child(2) {
+-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.right_container li {
+    margin-bottom: 22px;
+}
+
+.right_container li i{
+    margin-right: 12px;
     font-weight: 700;
 }
+
+/* .right_container li:before {
+    color: #4c515b ;
+   font-size: 12px;
+   font-family: FontAwesome;
+   content: "\f105";
+} */
+
+
+.right_container form {
+display: inline-block;
+    margin-left: 20px;
+        padding-bottom: 23px;
+    margin-left: 25px;
+    vertical-align: bottom;
+}
+
 .right_container button {
-    display: inline-block;
-    width: 72px;
+        display: inline-block;
     height: 10px;
     color: #ffffff;
     font-family: "Open Sans";
@@ -495,7 +594,7 @@ display: inline-block;
     height: 55px;
     background-color: #ff8261;
     border: none;
-    margin-left: 5px;
+    vertical-align: bottom;
 }
 
 .right_container button:active {
@@ -785,7 +884,7 @@ display: inline-block;
 .contact_form fieldset legend,
 .contact_form fieldset span {
     color: #a0a9b6;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 #last_p {
@@ -930,17 +1029,18 @@ font-weight: 400;
 line-height: 30px;
 }
 
-footer .footer_right div:nth-child(4) ul li {
+footer .footer_right div:nth-child(4) aside a {
     display: inline-block;
-    margin: 0 12px;
+    padding-right: 15px;
+    font-size: 24px;
 }
 
-footer .footer_right div:nth-child(4) ul li:first-child {
+footer .footer_right div:nth-child(4) aside a:first-child {
     display: inline-block;
     margin-left: 0;
 }
 
-footer .footer_right div:last-child(4) ul li:first-child {
+footer .footer_right div:last-child(4) aside a:first-child {
     display: inline-block;
     margin-right: 0;
 }
@@ -959,15 +1059,15 @@ footer .footer_right li span {
 
 footer a {
     text-decoration: none;
+    color: #909aad;
 }
 
-footer a:hover, 
 footer a:visited {
     color:#5eccf5;
 }
 
-/* does not work
-footer .footer_right div:last-child(4) a:hover i {
+footer a:hover {
     color:#5eccf5;
+    
 }
-*/
+
